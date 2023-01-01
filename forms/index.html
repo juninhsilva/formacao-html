@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form action="post" name="sign-up" target="_self" autocomplete="off" onsubmit="">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name"/>
+            </div>
+            <div>
+                <label for="age">Idade</label>
+                <input type="number" name="age" id="age" min="13" max="99"/>
+            </div>
+            <div>
+                <label for="options">Tipo de Usuário</label>
+                <select name="options" id="options">
+                    <option value="adm">Administrativo</option>
+                    <option value="sec">Secretariado</option>
+                    <option value="prof">Professor</option>
+                </select>
+            </div>
+            <div>
+                <label for="range">Satisfação</label>
+                <input type="range" name="range" id="range"/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password"/>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Concorda com os Termos</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" id="radio" value="sim">Sim</div>
+                <input type="radio" name="radio" id="radio" value="nao">Não</input>
+                <label for="radio">Gostou?</label>
+            </div>
+            <div>
+                <label for="textarea">Deixe sua opinião</label>
+                <textarea name="textarea" id="textarea" cols="32" rows="4"></textarea>
+            </div>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
